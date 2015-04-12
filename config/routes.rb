@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "/", to: "index#login"
+  get '/welcome', to: "welcome#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,4 +55,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+root 'application#hello'
+
 end
